@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(213, 255, 241);
+}
+
+.Weather {
+  background-color: white;
+  border-radius: 14px;
+}
+
+.main-wrap {
+  position: relative;
+  background: linear-gradient(to right, rgb(50, 200, 208), purple, pink);
+  padding: 4px;
+  border-radius: 14px;
+}
+
+.Weather h1 {
+  margin-left: 32px;
+}
+
+.Weather form {
+  margin-left: 10px;
+}
+
+.Weather ul {
+  color: rgba(0, 0, 0, 0.387);
+  font-size: 12px;
+  list-style-type: none;
+}
+
+.Weather .searchbar {
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(213, 255, 241, 0.557);
+  padding: 7px;
+}
+
+.Weather .btn {
+  background-color: rgb(210, 127, 255);
+  margin-left: 25px;
+}
+
+.Weather .currentTemp {
+  padding: 25px 10px;
+}
+
+.Weather .weekly-weather {
+  text-align: center;
+}
+
+.Weather .currentCity {
+  padding-top: 40px;
+}
+
