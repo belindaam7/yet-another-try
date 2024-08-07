@@ -1,6 +1,5 @@
 import React from "react";
 import DateToday from "./DateToday";
-import "./WeatherInfo.css";
 import TempConvert from "./TempConvert";
 
 export default function WeatherInfo(props) {
