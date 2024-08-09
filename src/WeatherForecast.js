@@ -23,6 +23,9 @@ export default function WeatherForecast() {
                   <ForecastDay data={dailyForecast} />
                 </div>
               );
+            else {
+              return null;
+            }
           })}
         </div>
       </div>
