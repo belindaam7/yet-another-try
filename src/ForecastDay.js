@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 
 export default function ForecastDay(props) {
   let icon = `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${props.data.condition.icon}.png`;
@@ -22,12 +21,12 @@ export default function ForecastDay(props) {
   }
   return (
     <div>
-          <div className="forecast-day">{dayOfWeek()}</div>
-          <img src={icon} className="forecast-icon" />
-          <div className="forecast-temps">
-            <span className="forecast-temp-max">{tempMax()}</span> |{" "}
-            <span className="forecast-temp-min">{tempMin()}</span>
-          </div>
-        </div>
+      <div className="forecast-day">{dayOfWeek()}</div>
+      <img src={icon} className="forecast-icon" />
+      <div className="forecast-temps">
+        <span className="forecast-temp-max">{tempMax()}</span> |{" "}
+        <span className="forecast-temp-min">{tempMin()}</span>
+      </div>
+    </div>
   );
 }
