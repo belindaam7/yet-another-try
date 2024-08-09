@@ -1,0 +1,20 @@
+.WeatherForecast {
+  text-align: center;
+}
+
+.WeatherForecast .forecast-day {
+  font-weight: 800;
+}
+
+.WeatherForecast .forecast-temps {
+  font-size: 14px;
+  opacity: 75%;
+}
+
+.WeatherForecast .forecast-temp-max {
+  font-weight: 800;
+}
+
+.WeatherForecast .forecast-icon {
+  max-width: 80px;
+}
