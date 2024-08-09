@@ -24,7 +24,7 @@ export default function WeatherInfo(props) {
           <TempConvert fahrenheit={props.info.temperature} icon={props.info.icon}/>
         </div>
       </div>
-     <WeatherForecast />
+     <WeatherForecast city={props.info.city}/>
       </div>
   );
 }
