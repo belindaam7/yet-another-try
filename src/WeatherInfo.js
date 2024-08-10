@@ -1,7 +1,6 @@
 import React from "react";
 import DateToday from "./DateToday";
 import TempConvert from "./TempConvert";
-import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherInfo(props) {
   return (
@@ -24,7 +23,7 @@ export default function WeatherInfo(props) {
           <TempConvert fahrenheit={props.info.temperature} icon={props.info.icon}/>
         </div>
       </div>
-     <WeatherForecast city={props.info.city}/>
+     
       </div>
   );
 }

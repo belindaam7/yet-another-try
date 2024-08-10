@@ -7,14 +7,14 @@ export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
 
+  useEffect(() => {
+    setLoaded(false);
+  }, [props.citySearched]);
+
   function handleResponse(response) {
     setForecast(response.data.daily);
     setLoaded(true);
   }
-
-  useEffect(() => {
-    setLoaded(false);
-  }, [props.city]);
 
   if (loaded) {
     return (
@@ -36,7 +36,7 @@ export default function WeatherForecast(props) {
     );
   } else {
     let apiKey = `bec049cdcofb5t08d94f2fc0c3440fa3`;
-    let city = `San Diego`;
+    let city = props.citySearched;
     let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
 
     axios.get(apiUrl).then(handleResponse);
